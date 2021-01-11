@@ -1,0 +1,42 @@
+.base {
+  width: 60px;
+  height: 60px;
+
+  margin: 2px;
+  border: 1px solid grey;
+  border-radius: 6px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  user-select: none;
+}
+
+.size1 {
+  width: 60px;
+}
+
+.size1-25 {
+  width: 75px;
+}
+
+.size1-5 {
+  width: 90px;
+}
+
+.size1-75 {
+  width: 105px;
+}
+
+.size2-25 {
+  width: 135px;
+}
+
+.size2-75 {
+  width: 165px;
+}
+
+.size6-25 {
+  width: 375px;
+}
