@@ -21,7 +21,7 @@ Playground for testing your computer accessories.
 1. Fork this repository and clone it to your computer
 2. Install dependency locally via `npm install`
 3. Do your work 🛠.
-4. Run formatter `npm run format`
+4. Run formatter `npm run lint`
 5. Run the test `npm test`
 6. Push to your remote branch and create "Pull request"
 
@@ -35,7 +35,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.
 You will also see any lint errors in the console.
 
-### `npm run format`
+### `npm run lint`
 Format the code styles to follow the styles in `.prettierrc` file
 
 ### `npm test`
