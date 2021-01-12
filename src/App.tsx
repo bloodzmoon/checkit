@@ -1,18 +1,21 @@
-import React from 'react'
-import { Key } from './components/Key'
+import { useEffect } from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { CheckPage } from '@pages'
 
 function App() {
+  // This effect is for debug only!
+  useEffect(() => {
+    const handler = ({ code }: KeyboardEvent) => console.log(code)
+    window.addEventListener('keydown', handler)
+    return () => window.removeEventListener('keydown', handler)
+  }, [])
+
   return (
-    <div>
-      Hello world
-      <Key size="1">A</Key>
-      <Key size="1.25">cmd</Key>
-      <Key size="1.5">TAB</Key>
-      <Key size="1.75">Caps Lock</Key>
-      <Key size="2.25">Shift</Key>
-      <Key size="2.75">Shift</Key>
-      <Key size="6.25">Space</Key>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={CheckPage.Keyboard} />
+      </Switch>
+    </BrowserRouter>
   )
 }
 

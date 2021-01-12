@@ -5,6 +5,7 @@
   "dependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1"
   },
   "devDependencies": {
@@ -15,6 +16,7 @@
     "@types/node": "^12.19.12",
     "@types/react": "^16.14.2",
     "@types/react-dom": "^16.9.10",
+    "@types/react-router-dom": "^5.1.7",
     "cross-env": "^7.0.3",
     "prettier": "^2.2.1",
     "react-app-rewired": "^2.1.8",
@@ -25,7 +27,7 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "cross-env CI=true react-scripts test --env=jsdom",
-    "lint": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "jest": {
     "moduleNameMapper": {
@@ -37,6 +39,12 @@
       ],
       "^@utils(.*)$": [
         "<rootDir>/src/utils/index.ts$1"
+      ],
+      "^@lib(.*)$": [
+        "<rootDir>/src/lib/index.ts$1"
+      ],
+      "^@hooks(.*)$": [
+        "<rootDir>/src/hooks/index.ts$1"
       ]
     }
   },
