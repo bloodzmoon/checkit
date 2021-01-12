@@ -9,8 +9,11 @@ Playground for testing your computer accessories.
 - Make great web application.
 
 ## 🎈 Playground supported
-- [ ] Keyboard
+- [x] Keyboard (window)
+- [ ] Keyboard (mac)
 - [ ] Mouse
+- [ ] Xbox Controller 
+- [ ] PS Controller
 
 ## 💻 Technology used
 - [React](https://reactjs.org/)
