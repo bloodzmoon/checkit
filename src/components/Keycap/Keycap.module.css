@@ -1,9 +1,11 @@
 .base {
   width: 60px;
   height: 60px;
+  color: #333;
+  background: #fff;
 
-  margin: 2px;
-  border: 1px solid grey;
+  margin: 4px;
+  border: 1px solid #c4c4c4;
   border-radius: 6px;
 
   display: inline-flex;
@@ -15,6 +17,10 @@
 
 .size1 {
   width: 60px;
+}
+
+.size1-15 {
+  width: 69px;
 }
 
 .size1-25 {
@@ -29,6 +35,10 @@
   width: 105px;
 }
 
+.size2 {
+  width: 120px;
+}
+
 .size2-25 {
   width: 135px;
 }
@@ -39,4 +49,13 @@
 
 .size6-25 {
   width: 375px;
+}
+
+.half {
+  height: 30px;
+  border-radius: 4px;
+}
+
+.pressed {
+  background: lightskyblue;
 }

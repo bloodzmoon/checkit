@@ -2,4 +2,5 @@
  * This file will export other components
  * to prevent redundant import path
  */
-export { Key } from './Key'
+export { Keycap } from './Keycap'
+export { Keyboard } from './Keyboard'
