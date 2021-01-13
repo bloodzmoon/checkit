@@ -22,6 +22,7 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route path="/check/keyboard" component={CheckPage.Keyboard} />
+        <Route path="/check/mouse" component={CheckPage.Mouse} />
       </Switch>
     </BrowserRouter>
   )

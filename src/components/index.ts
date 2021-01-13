@@ -4,3 +4,4 @@
  */
 export { Keycap } from './Keycap'
 export { Keyboard } from './Keyboard'
+export { Mouse } from './Mouse'
