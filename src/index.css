@@ -17,3 +17,8 @@ code {
 *, *::after, *::before {
   box-sizing: border-box;
 }
+
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
