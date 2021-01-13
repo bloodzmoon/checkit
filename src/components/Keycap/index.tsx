@@ -22,9 +22,10 @@ export function Keycap({
   const isPressed = useKeyPress(code, fn)
 
   const sized = 'size' + size.replace('.', '-')
-  const pressed = isPressed ? 'pressed' : ''
   const half = halfHeight ? 'half' : ''
-  const styled = css(styles, 'base', sized, half, pressed)
+  const pressed = isPressed ? 'pressed' : ''
+  const gap = !children ? 'gap' : ''
+  const styled = css(styles, 'base', sized, half, pressed, gap)
 
   return <span className={styled}>{children}</span>
 }

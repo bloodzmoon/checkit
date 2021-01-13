@@ -1,7 +1,13 @@
 .layout {
-  width: 1012px;
-
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+}
+
+.keyboard {
+  width: 1012px;
+}
+
+.extrakey {
+  width: 204px;
 }

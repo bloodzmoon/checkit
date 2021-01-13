@@ -59,3 +59,11 @@
 .pressed {
   background: lightskyblue;
 }
+
+.gap {
+  width: 1px;
+  height: 1px;
+  margin-top: 60px;
+  margin-right: 60px;
+  background: none;
+}

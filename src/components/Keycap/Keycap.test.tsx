@@ -1,18 +1,47 @@
-import React from 'react'
-import { render } from '@testing-library/react'
-import { Keycap } from './index'
+import renderer from 'react-test-renderer'
+import { shallow } from 'enzyme'
+
+import { Keycap } from '@components'
+import { FiCheck } from 'react-icons/fi'
 
 describe('<Keycap>', () => {
   it('should render <span>', () => {
-    const { container } = render(<Keycap />)
-    const element = container.querySelector('span')
-    expect(element).toBeVisible()
+    const wrapper = shallow(<Keycap />)
+    expect(wrapper.find('span')).toHaveLength(1)
   })
 
-  it('should render child correctly', () => {
+  it('should render `string child` correctly', () => {
     const expectedText = 'Shift'
-    const { container } = render(<Keycap>{expectedText}</Keycap>)
-    const element = container.firstChild
-    expect(element?.textContent).toBe(expectedText)
+    const wrapper = shallow(<Keycap>{expectedText}</Keycap>)
+    const child = wrapper.children()
+    expect(child.text()).toBe(expectedText)
+  })
+
+  it('should render `icon child` correctly', () => {
+    const wrapper = shallow(
+      <Keycap>
+        <FiCheck />
+      </Keycap>
+    )
+    const child = wrapper.children()
+    expect(child.type()).toBe(FiCheck)
+  })
+
+  it('should render class from props correctly', () => {
+    const wrapper = shallow(<Keycap size="1.5" halfHeight />)
+    expect(wrapper.hasClass('size1-5')).toBeTruthy()
+    expect(wrapper.hasClass('half')).toBeTruthy()
+    expect(wrapper.hasClass('gap')).toBeTruthy()
+  })
+
+  it('should match snapshot', () => {
+    const tree = renderer
+      .create(
+        <Keycap size="1.15" halfHeight>
+          Test
+        </Keycap>
+      )
+      .toJSON()
+    expect(tree).toMatchSnapshot()
   })
 })

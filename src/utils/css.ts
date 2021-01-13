@@ -7,5 +7,8 @@ import type Styles from '*.module.css'
  * @param classesName Array of class name
  */
 export function css(styles: typeof Styles, ...classesName: string[]) {
-  return classesName.map((name) => styles[name]).join(' ')
+  return classesName
+    .map((name) => styles[name])
+    .filter((name) => name !== '')
+    .join(' ')
 }

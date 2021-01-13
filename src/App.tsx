@@ -6,14 +6,22 @@ function App() {
   // This effect is for debug only!
   useEffect(() => {
     const handler = ({ code }: KeyboardEvent) => console.log(code)
+    const focus = () => console.log('focus!')
+    const blur = () => console.log('blur!')
     window.addEventListener('keydown', handler)
-    return () => window.removeEventListener('keydown', handler)
+    window.addEventListener('focus', focus)
+    window.addEventListener('blur', blur)
+    return () => {
+      window.removeEventListener('keydown', handler)
+      window.removeEventListener('focus', focus)
+      window.removeEventListener('blur', blur)
+    }
   }, [])
 
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={CheckPage.Keyboard} />
+        <Route path="/check/keyboard" component={CheckPage.Keyboard} />
       </Switch>
     </BrowserRouter>
   )

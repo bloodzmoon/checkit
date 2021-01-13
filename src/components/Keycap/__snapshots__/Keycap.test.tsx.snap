@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Keycap> should match snapshot 1`] = `
+<span
+  className="base size1-15 half"
+>
+  Test
+</span>
+`;

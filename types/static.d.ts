@@ -71,7 +71,7 @@ declare module 'keycap' {
       | '6.25'
   }
   export interface IKeycap {
-    text: string
+    text: React.ReactNode
     size: Keycap.size
     code?: string
     halfHeight?: boolean

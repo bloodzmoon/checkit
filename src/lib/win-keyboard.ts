@@ -1,6 +1,12 @@
 import { IKeycap } from 'keycap'
+import {
+  FiChevronDown,
+  FiChevronLeft,
+  FiChevronRight,
+  FiChevronUp,
+} from 'react-icons/fi'
 
-export const keyboard: IKeycap[] = [
+const keyboard: IKeycap[] = [
   { text: 'Esc', code: 'Escape', size: '1.15', halfHeight: true },
   { text: 'F1', code: 'F1', size: '1.15', halfHeight: true },
   { text: 'F2', code: 'F2', size: '1.15', halfHeight: true },
@@ -81,3 +87,32 @@ export const keyboard: IKeycap[] = [
   { text: 'Menu', code: 'ContextMenu', size: '1.25' },
   { text: 'Ctrl', code: 'ControlRight', size: '1.25' },
 ]
+
+const arrowKey: IKeycap[] = [
+  { text: '', size: '1' },
+  { text: FiChevronUp({}), code: 'ArrowUp', size: '1' },
+  { text: '', size: '1' },
+  { text: FiChevronLeft({}), code: 'ArrowLeft', size: '1' },
+  { text: FiChevronDown({}), code: 'ArrowDown', size: '1' },
+  { text: FiChevronRight({}), code: 'ArrowRight', size: '1' },
+]
+
+const extraKey: IKeycap[] = [
+  { text: 'NumLK', code: 'NumLock', size: '1' },
+  { text: 'ScrLK', code: 'ScrollLock', size: '1' },
+  { text: 'Pause', code: 'Pause', size: '1' },
+  //
+  { text: 'Ins', code: 'Insert', size: '1' },
+  { text: 'Home', code: 'Home', size: '1' },
+  { text: 'PgUp', code: 'PageUp', size: '1' },
+  //
+  { text: 'Del', code: 'Delete', size: '1' },
+  { text: 'End', code: 'End', size: '1' },
+  { text: 'PgDn', code: 'PageDown', size: '1' },
+]
+
+export const win = {
+  keyboard,
+  arrowKey,
+  extraKey,
+}
