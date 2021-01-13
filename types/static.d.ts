@@ -69,6 +69,7 @@ declare module 'keycap' {
       | '2.25'
       | '2.75'
       | '6.25'
+      | '7.25'
   }
   export interface IKeycap {
     text: React.ReactNode

@@ -81,9 +81,8 @@ const keyboard: IKeycap[] = [
   { text: 'Ctrl', code: 'ControlLeft', size: '1.25' },
   { text: 'Win', code: 'MetaLeft', size: '1.25' },
   { text: 'Alt', code: 'AltLeft', size: '1.25' },
-  { text: 'Space', code: 'Space', size: '6.25' },
+  { text: 'Space', code: 'Space', size: '7.25' },
   { text: 'Alt', code: 'AltRight', size: '1.25' },
-  { text: 'Fn', size: '1.25' },
   { text: 'Menu', code: 'ContextMenu', size: '1.25' },
   { text: 'Ctrl', code: 'ControlRight', size: '1.25' },
 ]
