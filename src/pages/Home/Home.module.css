@@ -1,0 +1,47 @@
+.page {
+  min-height: 100vh;
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 40px;
+
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  width: 1280px;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.item {
+  width: 400px;
+  height: 400px;
+  margin: 40px 0;
+  background: #f1f1f1;
+
+  font-size: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  user-select: none;
+  transition: .2s;
+}
+
+.item:hover {
+  transform: scale(1.1);
+}
