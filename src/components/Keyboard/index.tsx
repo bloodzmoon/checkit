@@ -5,14 +5,14 @@ import { css } from '@utils'
 
 interface Props {
   layout: IKeycap[]
-  role?: 'keyboard' | 'extrakey'
+  width?: string
 }
 
-export function Keyboard({ layout, role = 'keyboard' }: Props) {
-  const styled = css(styles, 'layout', role)
+export function Keyboard({ layout, width = '1012px' }: Props) {
+  const styled = css(styles, 'layout')
 
   return (
-    <div className={styled}>
+    <div className={styled} style={{ width }}>
       {layout.map(({ text, size, halfHeight, code, fn }, index) => (
         <Keycap
           key={index}

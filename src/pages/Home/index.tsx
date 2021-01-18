@@ -2,6 +2,7 @@ import styles from './Home.module.css'
 import { Link } from 'react-router-dom'
 import { FaRegKeyboard } from 'react-icons/fa'
 import { CgMouse } from 'react-icons/cg'
+import { BiCalculator } from 'react-icons/bi'
 
 const menus = [
   {
@@ -9,7 +10,16 @@ const menus = [
     icon: <FaRegKeyboard size="96" />,
     to: '/check/keyboard',
   },
-  { text: 'Mouse', icon: <CgMouse size="96" />, to: '/check/mouse' },
+  {
+    text: 'Mouse',
+    icon: <CgMouse size="96" />,
+    to: '/check/mouse',
+  },
+  {
+    text: 'Numpad',
+    icon: <BiCalculator size="96" />,
+    to: '/check/numpad',
+  },
 ]
 
 export function HomePage() {
