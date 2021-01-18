@@ -12,6 +12,7 @@ Playground for testing your computer accessories.
 - [x] Keyboard (window)
 - [ ] Keyboard (mac)
 - [x] Mouse
+- [x] Numpad
 - [ ] Xbox Controller 
 - [ ] PS Controller
 
