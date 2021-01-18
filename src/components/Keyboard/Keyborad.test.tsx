@@ -14,11 +14,6 @@ describe('<Keyboard>', () => {
     expect(child.length).toBe(1)
   })
 
-  it('should render class from role correctly', () => {
-    const wrapper = shallow(<Keyboard layout={mock} role="extrakey" />)
-    expect(wrapper.hasClass('extrakey')).toBeTruthy()
-  })
-
   it('should match snapshot', () => {
     const tree = renderer.create(<Keyboard layout={mock} />).toJSON()
     expect(tree).toMatchSnapshot()

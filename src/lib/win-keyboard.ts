@@ -5,6 +5,8 @@ import {
   FiChevronRight,
   FiChevronUp,
 } from 'react-icons/fi'
+import { RiDivideLine } from 'react-icons/ri'
+import { VscArrowLeft } from 'react-icons/vsc'
 
 const keyboard: IKeycap[] = [
   { text: 'Esc', code: 'Escape', size: '1.15', halfHeight: true },
@@ -110,8 +112,34 @@ const extraKey: IKeycap[] = [
   { text: 'PgDn', code: 'PageDown', size: '1' },
 ]
 
+const numpad: IKeycap[] = [
+  { text: 'AC', code: 'Delete', size: '1.5' },
+  { text: VscArrowLeft({}), code: 'Backspace', size: '1.5' },
+  { text: RiDivideLine({}), code: 'NumpadDivide', size: '1' },
+  //
+  { text: '7', code: 'Numpad7', size: '1' },
+  { text: '8', code: 'Numpad8', size: '1' },
+  { text: '9', code: 'Numpad9', size: '1' },
+  { text: 'x', code: 'NumpadMultiply', size: '1' },
+  //
+  { text: '4', code: 'Numpad4', size: '1' },
+  { text: '5', code: 'Numpad5', size: '1' },
+  { text: '6', code: 'Numpad6', size: '1' },
+  { text: '-', code: 'NumpadSubtract', size: '1' },
+  //
+  { text: '1', code: 'Numpad1', size: '1' },
+  { text: '2', code: 'Numpad2', size: '1' },
+  { text: '3', code: 'Numpad3', size: '1' },
+  { text: '+', code: 'NumpadAdd', size: '1' },
+  //
+  { text: '0', code: 'Numpad0', size: '2.25' },
+  { text: '.', code: 'NumpadDecimal', size: '1' },
+  { text: '=', code: 'NumpadEnter', size: '1' },
+]
+
 export const win = {
   keyboard,
   arrowKey,
   extraKey,
+  numpad,
 }

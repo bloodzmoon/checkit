@@ -8,6 +8,7 @@ function App() {
         <Route exact path="/" component={HomePage} />
         <Route path="/check/keyboard" component={CheckPage.Keyboard} />
         <Route path="/check/mouse" component={CheckPage.Mouse} />
+        <Route path="/check/numpad" component={CheckPage.Numpad} />
       </Switch>
       <Link
         to="/"

@@ -2,7 +2,12 @@
 
 exports[`<Keyboard> should match snapshot 1`] = `
 <div
-  className="layout keyboard"
+  className="layout"
+  style={
+    Object {
+      "width": "1012px",
+    }
+  }
 >
   <span
     className="base size1"

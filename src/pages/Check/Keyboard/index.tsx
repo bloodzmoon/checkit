@@ -6,10 +6,10 @@ export function KeyboardPage() {
   return (
     <div className={styles.page}>
       <div className={styles.container}>
-        <Keyboard role="keyboard" layout={win.keyboard} />
+        <Keyboard layout={win.keyboard} />
         <div className={styles.right}>
-          <Keyboard role="extrakey" layout={win.extraKey} />
-          <Keyboard role="extrakey" layout={win.arrowKey} />
+          <Keyboard width="204px" layout={win.extraKey} />
+          <Keyboard width="204px" layout={win.arrowKey} />
         </div>
       </div>
     </div>
